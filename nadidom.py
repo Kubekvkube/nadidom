@@ -13,7 +13,7 @@ from telegram.ext import (
 from dotenv import load_dotenv
 import os
 
-load_dotenv()  # Эта строка обязательно должна быть ДО os.getenv
+load_dotenv()  
 
 token = os.getenv("BOT_TOKEN")
 
@@ -28,8 +28,8 @@ CHOOSING, ASKING_NAME, ASKING_COUNTRY, ASKING_EXTRA = range(4)
 # Data store
 user_data = {}
 
-# Admin chat ID (можно также указать ID Telegram-группы)
-ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID")  # например, '-1001234567890'
+# Admin chat ID 
+ADMIN_CHAT_ID = os.getenv("ADMIN_CHAT_ID")  
 
 # Inline keyboard
 keyboard = [
